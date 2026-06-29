@@ -15,3 +15,17 @@ def mochila_fuerza_bruta():
     
     peso_total = 0
     valor_total = 0        
+# Evaluar objetos secuencialmente
+    for i in range(n):
+        if peso_total + pesos[i] <= capacidad:
+            peso_total += pesos[i]
+            valor_total += valores[i]
+            
+    # Mostrar resultados
+    print("")
+    print(f"Peso utilizado: {peso_total}")
+    print(f"Valor obtenido: {valor_total}")
+
+# Ejecutar función
+if __name__ == "__main__":
+    mochila_fuerza_bruta()    
